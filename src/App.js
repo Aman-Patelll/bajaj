@@ -17,7 +17,7 @@ function App() {
 	const handleSubmit = async () => {
 		try {
 			const payload = JSON.parse(jsonInput); // Validate JSON
-			const response = await axios.post("http://localhost:5000/bfhl", payload); // API call
+			const response = await axios.post("https://bajaj-backend-ruddy.vercel.app/bfhl", payload); // API call
 			setResponseData(response.data);
 		} catch (err) {
 			alert("Invalid JSON format! Please check and try again.");
